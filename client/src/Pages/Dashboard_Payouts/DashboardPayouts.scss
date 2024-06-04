@@ -1,0 +1,67 @@
+.DashboardPayouts_MainContainer {
+    width: 100vw;
+    display: flex;
+
+    .left {
+        width: fit-content;
+    }
+
+    .right {
+        width: 100%;
+        .contents{
+            width: 100%;
+            padding: 8vh 6vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            .box{
+                display: flex;
+                justify-content: space-between;
+                .PayoutsHead{
+                    font-size: 35px;
+                }
+                .settingsBtn{
+                    width: 9rem;
+                    height: 2.5rem;
+                    border: none;
+                    outline: none;
+                    background-color: rgb(255,219,88);
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            .payoutCardBoxes{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                .payoutCard_Box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 2rem;
+                    gap : 1rem;
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    width: 15rem;
+                    height: 8rem;
+                    .payoutCard_Box_h2{
+                        font-size: 16px;
+                        color: rgb(2, 2, 107);
+                    }
+                    .payoutCard_Box_h1{
+                        font-weight: 17px;
+                    }
+                }
+            }
+            .PayoutsHistoryTitle{
+                font-size: 30px;
+                margin-top: 2rem;
+            }
+            .graph2{
+                width: 90%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}

@@ -3,9 +3,11 @@ import DashboardSidebar from '../../Components/Dashboard_SideBar/DashboardSideba
 import DashboardNavbar from '../../Components/Dashboard_Navbar/DashboardNavbar';
 import { ImPlus } from "react-icons/im";
 import Graph1 from "../../Assets/Block (1).jpg"
+import { useNavigate } from 'react-router-dom';
 import "./DashboardHome.scss";
 
 export default function DashboardHome() {
+    const navigate = useNavigate();
     return (
         <div className='DashboardHome_MainContainer'>
             <div className="left">
@@ -19,7 +21,7 @@ export default function DashboardHome() {
                     <h1>It't time to create something</h1>
                     <div className="createProductBox">
                         <ImPlus id='plusIcon'/>
-                        <button>Create Your Product</button>
+                        <button onClick={()=>navigate("/dashboard/create/newProduct")}>Create Your Product</button>
                     </div>
                     <h2>Analytics</h2>
                     <img src={Graph1} alt="" />

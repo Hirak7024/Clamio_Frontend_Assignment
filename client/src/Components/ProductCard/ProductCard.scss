@@ -1,0 +1,42 @@
+.ProductCard_Container{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    gap: 0.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    .productImg{
+        width: 4.5rem;
+        height: 2.5rem;
+        background-color: rgb(252,201,23);
+    }
+    .editBtnImg{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: contain;
+    }
+    .productCardTitle{
+        font-size: 18px;
+    }
+    .rating{
+        display: flex;
+        gap: 0.5rem;
+        .stars{
+            display: flex;
+            gap: 5px;
+        }
+        .rates{
+            font-size: 14px;
+        }
+    }
+    .desc{
+        font-size:12px;
+    }
+}
