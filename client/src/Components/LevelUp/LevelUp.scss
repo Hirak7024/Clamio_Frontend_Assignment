@@ -1,0 +1,50 @@
+.LevelUp_MainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 10vh 6vw 20vh 6vw;
+    background-color: white;
+    h1{
+        font-size: 30px; 
+        margin-bottom: 2rem;
+    }
+    .BoxUnorderedList{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        .BoxUnorderedListItem{
+            list-style: none;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            img{
+                width: 12rem;
+                height: 12rem;
+                object-fit: contain;
+            }
+            h2{
+                display: flex;
+                gap: 7px;
+                font-size: 20px;
+                p{
+                    color: rgb(255,219,88);
+                    font-size: 20px;
+                }
+            }
+            .insideBox_List{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                // align-self: flex-start;
+                .insideBox_List_Item{
+                    font-size: 14px;
+                    list-style-type: circle;
+                }
+            }
+        }
+    }
+}
