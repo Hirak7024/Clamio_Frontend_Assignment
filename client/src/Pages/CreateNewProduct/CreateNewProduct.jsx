@@ -2,10 +2,13 @@ import React from 'react';
 import DashboardSidebar from '../../Components/Dashboard_SideBar/DashboardSidebar';
 import DashboardNavbar from '../../Components/Dashboard_Navbar/DashboardNavbar';
 import { FaPlus } from "react-icons/fa6";
-import "./CreateNewProduct.scss";
+import { FaIndianRupeeSign } from "react-icons/fa6";
 import ProductCategory from '../../Components/ProductCategoryCard/ProductCategory';
+import { useNavigate } from 'react-router-dom';
+import "./CreateNewProduct.scss";
 
 export default function CreateNewProduct() {
+    const navigate = useNavigate();
     return (
         <div className='CreateNewProduct_MainContainer'>
             <div className="left">
@@ -51,6 +54,23 @@ export default function CreateNewProduct() {
                                 <ProductCategory key={index} />
                             ))}
                         </div>
+                    </div>
+                    <div className="productHighLights">
+                        <h1 className="productHighLights">Your Product Highlights</h1>
+                        <div className="productHighlightsBox">
+                            {Array.from({ length: 8 }, (_, index) => (
+                                <div key={index} className='FeatureBox'>
+                                    <h3 className="FeatureTitle">Feature {index + 1}</h3>
+                                    <div className="FeatureInput">Input Area</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <h1 className="setPrice">Set Price</h1>
+                    <div className="priceInput"><FaIndianRupeeSign id='rupeesIcon' /></div>
+                    <div className="buttonsBox">
+                        <button className="cancelAndLaunchBtn">Cancel</button>
+                        <button className="cancelAndLaunchBtn" onClick={()=>navigate("/dashboard/createdProduct")} >Launch Product</button>
                     </div>
                 </div>
             </div>
