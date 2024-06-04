@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import DashboardSidebar from '../../Components/Dashboard_SideBar/DashboardSidebar';
 import DashboardNavbar from '../../Components/Dashboard_Navbar/DashboardNavbar';
 import SmallGraph from "../../Assets/carbon_analytics.jpg";
@@ -9,12 +9,16 @@ import FBLogo from "../../Assets/fbLogo.jpg";
 import IGLogo from "../../Assets/IgLogo.jpg";
 import WPLogo from "../../Assets/WpLogo.jpg";
 import "./CreatedProduct.scss";
-import ProductCategory from '../../Components/ProductCategoryCard/ProductCategory';
 import ProductCardListing from '../../Components/ProductCardListing/ProductCardListing';
+import { useLocation } from 'react-router-dom';
 
 export default function CreatedProduct() {
     const ProductHighlights = ["Easy to Use", "Easy Returns", "Result in 10 days", "Google Certified"];
     const ProductListing = ["A", "B", "C", "D", "E", "F"];
+    const location = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
     return (
         <div className='CreatedProduct_MainContainer'>
             <div className="left">
