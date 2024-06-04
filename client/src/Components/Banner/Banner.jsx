@@ -1,7 +1,11 @@
 import React from 'react';
-import "./Banner.scss";
 import MoneyBag from "../../Assets/MoneyBag2.png";
+import { useNavigate } from 'react-router-dom';
+import "./Banner.scss";
+
+
 export default function Banner() {
+    const navigate = useNavigate();
     return (
         <div className='Banner_Main_Container'>
             <nav>
@@ -23,7 +27,7 @@ export default function Banner() {
                     <h1><p>CLAMIO</p> RERWARDS PROGRAM</h1>
                     <p>Refer CLAMIO to fellow creators or sell 100 Digital Products through CLAMIO, &</p>
                     <h2>earn Rs. 50000*</h2>
-                    <button>View Dashboard</button>
+                    <button onClick={()=>navigate("/dashboard/home")}>View Dashboard</button>
                     </div>
                     <div className="bottom">
                         <p>*Terms and conditions Apply</p>

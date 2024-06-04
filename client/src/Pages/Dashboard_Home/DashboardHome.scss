@@ -1,0 +1,55 @@
+.DashboardHome_MainContainer {
+    width: 100vw;
+    display: flex;
+
+    .left {
+        width: fit-content;
+    }
+
+    .right {
+        width: 100%;
+        .contents{
+            width: 100%;
+            padding: 8vh 6vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            h1{
+                font-size: 35px;
+            }
+            .createProductBox{
+                width: 90%;
+                height: 18rem;
+                background-color: rgb(255,219,88);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                #plusIcon{
+                    width: 6rem;
+                    height: 6rem;
+                    background-color: rgb(214,200,200);
+                    padding: 1.5rem;
+                }
+                button{
+                    width: 15rem;
+                    height: 2.5rem;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            }
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+            }
+            img{
+                width: 80%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}
