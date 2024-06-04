@@ -1,3 +1,5 @@
+@import "../../css-config/mixins.scss";
+
 .LevelUp_MainContainer{
     width: 100%;
     display: flex;
@@ -9,6 +11,15 @@
     h1{
         font-size: 33px; 
         margin-bottom: 2rem;
+        @include md{
+            font-size: 22px;
+            margin-bottom: 1rem;
+        }
+        @include lg{
+            font-size: 30px;
+            margin-bottom: 1rem;
+        }
+        
     }
     .BoxUnorderedList{
         width: 100%;
@@ -25,24 +36,40 @@
                 width: 12rem;
                 height: 12rem;
                 object-fit: contain;
+                @include md{
+                    width: 10rem;
+                    height: 10rem;
+                }
             }
             h2{
                 display: flex;
                 gap: 7px;
                 font-size: 20px;
+                @include md{
+                    font-size: 15px;
+                }
                 p{
                     color: rgb(255,219,88);
                     font-size: 20px;
+                    @include md{
+                        font-size: 15px;
+                    }
                 }
             }
             .insideBox_List{
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
-                // align-self: flex-start;
+                padding: 0 4vw;
+                @include md{
+                    gap: 10px;
+                }
                 .insideBox_List_Item{
                     font-size: 14px;
                     list-style-type: circle;
+                    @include md{
+                        font-size: 12px;
+                    }
                 }
             }
         }

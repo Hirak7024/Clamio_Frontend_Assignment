@@ -18,7 +18,6 @@ export default function App() {
           <Route path='/dashboard/createdProduct' element={<CreatedProduct />} />
           <Route path='/dashboard/products' element={<DashboardProduct />} />
           <Route path='/dashboard/payouts' element={<DashboardPayouts />} />
-
         </Routes>
       </BrowserRouter>
     </>

@@ -1,3 +1,5 @@
+@import "../../css-config/mixins.scss";
+
 .Getting_Started_Main_Container{
     width: 100%;
     display: flex;
@@ -5,13 +7,22 @@
     gap: 2rem;
     padding: 4vh 6vw;
     background-color: white;
+    @include md{
+        padding: 4vh 4vw;
+    }
     h1{
         font-size: 33px;
         align-self: center;
+        @include md{
+            font-size: 22px;
+        }
+        @include lg {
+            font-size: 30px;
+        }
     }
     ul{
         display: flex;
-        gap: 3vw;
+        justify-content: space-between;
         li{
             list-style: none;
             display: flex;
@@ -25,6 +36,20 @@
                 border-radius: 50%;
                 padding: 3rem;
                 background-color: rgb(255,219,88);
+                @include md{
+                    width: 9rem;
+                    height: 9rem;
+                }
+                @include sm{
+                    width: 7rem;
+                    height: 7rem;
+                    padding: 2rem;
+                }
+                @include lg {
+                    width: 12rem;
+                    padding: 2.5rem;
+                    height: 12rem;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -34,11 +59,23 @@
             }
             h2{
                 font-size: 22px;
+                @include md{
+                    font-size: 17px;
+                }
+                @include lg {
+                    font-size: 20px;
+                }
             }
             p{
                 font-size: 15px;
                 padding: 0 4vw;
                 text-align: center;
+                @include md{
+                    font-size: 12px;
+                }
+                @include lg {
+                    font-size: 14px;
+                }
             }
 
         }
@@ -56,5 +93,11 @@
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
+        @include md{
+            width: 11rem;
+            height: 2.3rem;
+            font-size: 13px;
+        }
+        
     }
 }

@@ -8,9 +8,9 @@ import Copy from "../../Assets/copy.jpg";
 import FBLogo from "../../Assets/fbLogo.jpg";
 import IGLogo from "../../Assets/IgLogo.jpg";
 import WPLogo from "../../Assets/WpLogo.jpg";
-import "./CreatedProduct.scss";
 import ProductCardListing from '../../Components/ProductCardListing/ProductCardListing';
 import { useLocation } from 'react-router-dom';
+import "./CreatedProduct.scss";
 
 export default function CreatedProduct() {
     const ProductHighlights = ["Easy to Use", "Easy Returns", "Result in 10 days", "Google Certified"];

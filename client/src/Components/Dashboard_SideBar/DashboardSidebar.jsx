@@ -11,7 +11,7 @@ export default function DashboardSidebar() {
     const navigate = useNavigate();
     return (
         <div className='DashboardSidebar_MainContainer'>
-            <div className="box">
+            <div className="box" onClick={()=>navigate("/")}>
                 <div className="userCover"></div>
                 <p>User Name <MdOutlineArrowDropDown id='downArrow' /></p>
             </div>
